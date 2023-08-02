@@ -1,0 +1,5 @@
+-I/home/zyj/Desktop/rov_client_ros
+-I/home/zyj/Desktop/rov_client_ros/build
+-o
+/home/zyj/Desktop/rov_client_ros/build/include/moc_joy_thread.cpp
+/home/zyj/Desktop/rov_client_ros/include/joy_thread.h

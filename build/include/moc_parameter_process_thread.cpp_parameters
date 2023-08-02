@@ -1,0 +1,5 @@
+-I/home/zyj/Desktop/rov_client_ros
+-I/home/zyj/Desktop/rov_client_ros/build
+-o
+/home/zyj/Desktop/rov_client_ros/build/include/moc_parameter_process_thread.cpp
+/home/zyj/Desktop/rov_client_ros/include/parameter_process_thread.h
