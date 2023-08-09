@@ -1,7 +1,7 @@
 CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o: \
- /home/zyj/Desktop/rov_client_ros/src/joy_linux.cpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/src/joy_linux.cpp \
  /usr/include/stdc-predef.h \
- /home/zyj/Desktop/rov_client_ros/include/joy_linux.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/joy_linux.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \

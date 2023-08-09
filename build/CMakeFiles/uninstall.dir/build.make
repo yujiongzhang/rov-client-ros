@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zyj/Desktop/rov_client_ros
+CMAKE_SOURCE_DIR = /home/zyj/Documents/GitHub/rov_client_ros_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zyj/Desktop/rov_client_ros/build
+CMAKE_BINARY_DIR = /home/zyj/Documents/GitHub/rov_client_ros_code/build
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/zyj/Desktop/rov_client_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zyj/Desktop/rov_client_ros /home/zyj/Desktop/rov_client_ros /home/zyj/Desktop/rov_client_ros/build /home/zyj/Desktop/rov_client_ros/build /home/zyj/Desktop/rov_client_ros/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zyj/Documents/GitHub/rov_client_ros_code /home/zyj/Documents/GitHub/rov_client_ros_code /home/zyj/Documents/GitHub/rov_client_ros_code/build /home/zyj/Documents/GitHub/rov_client_ros_code/build /home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

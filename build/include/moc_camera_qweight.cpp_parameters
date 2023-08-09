@@ -1,5 +1,5 @@
--I/home/zyj/Desktop/rov_client_ros
--I/home/zyj/Desktop/rov_client_ros/build
+-I/home/zyj/Documents/GitHub/rov_client_ros_code
+-I/home/zyj/Documents/GitHub/rov_client_ros_code/build
 -o
-/home/zyj/Desktop/rov_client_ros/build/include/moc_camera_qweight.cpp
-/home/zyj/Desktop/rov_client_ros/include/camera_qweight.h
+/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_camera_qweight.cpp
+/home/zyj/Documents/GitHub/rov_client_ros_code/include/camera_qweight.h

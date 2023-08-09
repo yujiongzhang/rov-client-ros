@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_status_receive_node_connect_qt_t {
-    QByteArrayData data[3];
-    char stringdata0[40];
+    QByteArrayData data[12];
+    char stringdata0[159];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -33,12 +33,24 @@ struct qt_meta_stringdata_status_receive_node_connect_qt_t {
 static const qt_meta_stringdata_status_receive_node_connect_qt_t qt_meta_stringdata_status_receive_node_connect_qt = {
     {
 QT_MOC_LITERAL(0, 0, 30), // "status_receive_node_connect_qt"
-QT_MOC_LITERAL(1, 31, 7), // "s_depth"
-QT_MOC_LITERAL(2, 39, 0) // ""
+QT_MOC_LITERAL(1, 31, 13), // "s_depth_meter"
+QT_MOC_LITERAL(2, 45, 0), // ""
+QT_MOC_LITERAL(3, 46, 11), // "s_altimeter"
+QT_MOC_LITERAL(4, 58, 5), // "s_imu"
+QT_MOC_LITERAL(5, 64, 11), // "ImuPCStruct"
+QT_MOC_LITERAL(6, 76, 11), // "s_thrusters"
+QT_MOC_LITERAL(7, 88, 21), // "ThrustersClientStruct"
+QT_MOC_LITERAL(8, 110, 8), // "s_tracks"
+QT_MOC_LITERAL(9, 119, 14), // "TracksPCStruct"
+QT_MOC_LITERAL(10, 134, 13), // "s_cabin_state"
+QT_MOC_LITERAL(11, 148, 10) // "CabinState"
 
     },
-    "status_receive_node_connect_qt\0s_depth\0"
-    ""
+    "status_receive_node_connect_qt\0"
+    "s_depth_meter\0\0s_altimeter\0s_imu\0"
+    "ImuPCStruct\0s_thrusters\0ThrustersClientStruct\0"
+    "s_tracks\0TracksPCStruct\0s_cabin_state\0"
+    "CabinState"
 };
 #undef QT_MOC_LITERAL
 
@@ -48,18 +60,28 @@ static const uint qt_meta_data_status_receive_node_connect_qt[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       1,       // signalCount
+       6,       // signalCount
 
  // signals: name, argc, parameters, tag, flags
-       1,    1,   19,    2, 0x06 /* Public */,
+       1,    1,   44,    2, 0x06 /* Public */,
+       3,    1,   47,    2, 0x06 /* Public */,
+       4,    1,   50,    2, 0x06 /* Public */,
+       6,    1,   53,    2, 0x06 /* Public */,
+       8,    1,   56,    2, 0x06 /* Public */,
+      10,    1,   59,    2, 0x06 /* Public */,
 
  // signals: parameters
-    QMetaType::Void, QMetaType::Int,    2,
+    QMetaType::Void, QMetaType::Float,    2,
+    QMetaType::Void, QMetaType::Float,    2,
+    QMetaType::Void, 0x80000000 | 5,    2,
+    QMetaType::Void, 0x80000000 | 7,    2,
+    QMetaType::Void, 0x80000000 | 9,    2,
+    QMetaType::Void, 0x80000000 | 11,    2,
 
        0        // eod
 };
@@ -70,15 +92,55 @@ void status_receive_node_connect_qt::qt_static_metacall(QObject *_o, QMetaObject
         auto *_t = static_cast<status_receive_node_connect_qt *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->s_depth((*reinterpret_cast< int(*)>(_a[1]))); break;
+        case 0: _t->s_depth_meter((*reinterpret_cast< float(*)>(_a[1]))); break;
+        case 1: _t->s_altimeter((*reinterpret_cast< float(*)>(_a[1]))); break;
+        case 2: _t->s_imu((*reinterpret_cast< ImuPCStruct(*)>(_a[1]))); break;
+        case 3: _t->s_thrusters((*reinterpret_cast< ThrustersClientStruct(*)>(_a[1]))); break;
+        case 4: _t->s_tracks((*reinterpret_cast< TracksPCStruct(*)>(_a[1]))); break;
+        case 5: _t->s_cabin_state((*reinterpret_cast< CabinState(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
         int *result = reinterpret_cast<int *>(_a[0]);
         {
-            using _t = void (status_receive_node_connect_qt::*)(int );
-            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&status_receive_node_connect_qt::s_depth)) {
+            using _t = void (status_receive_node_connect_qt::*)(float );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&status_receive_node_connect_qt::s_depth_meter)) {
                 *result = 0;
+                return;
+            }
+        }
+        {
+            using _t = void (status_receive_node_connect_qt::*)(float );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&status_receive_node_connect_qt::s_altimeter)) {
+                *result = 1;
+                return;
+            }
+        }
+        {
+            using _t = void (status_receive_node_connect_qt::*)(ImuPCStruct );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&status_receive_node_connect_qt::s_imu)) {
+                *result = 2;
+                return;
+            }
+        }
+        {
+            using _t = void (status_receive_node_connect_qt::*)(ThrustersClientStruct );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&status_receive_node_connect_qt::s_thrusters)) {
+                *result = 3;
+                return;
+            }
+        }
+        {
+            using _t = void (status_receive_node_connect_qt::*)(TracksPCStruct );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&status_receive_node_connect_qt::s_tracks)) {
+                *result = 4;
+                return;
+            }
+        }
+        {
+            using _t = void (status_receive_node_connect_qt::*)(CabinState );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&status_receive_node_connect_qt::s_cabin_state)) {
+                *result = 5;
                 return;
             }
         }
@@ -114,22 +176,57 @@ int status_receive_node_connect_qt::qt_metacall(QMetaObject::Call _c, int _id, v
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 6)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 1;
+        _id -= 6;
     }
     return _id;
 }
 
 // SIGNAL 0
-void status_receive_node_connect_qt::s_depth(int _t1)
+void status_receive_node_connect_qt::s_depth_meter(float _t1)
 {
     void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
     QMetaObject::activate(this, &staticMetaObject, 0, _a);
+}
+
+// SIGNAL 1
+void status_receive_node_connect_qt::s_altimeter(float _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 1, _a);
+}
+
+// SIGNAL 2
+void status_receive_node_connect_qt::s_imu(ImuPCStruct _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 2, _a);
+}
+
+// SIGNAL 3
+void status_receive_node_connect_qt::s_thrusters(ThrustersClientStruct _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 3, _a);
+}
+
+// SIGNAL 4
+void status_receive_node_connect_qt::s_tracks(TracksPCStruct _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 4, _a);
+}
+
+// SIGNAL 5
+void status_receive_node_connect_qt::s_cabin_state(CabinState _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(std::addressof(_t1))) };
+    QMetaObject::activate(this, &staticMetaObject, 5, _a);
 }
 struct qt_meta_stringdata_status_receive_thread_t {
     QByteArrayData data[3];

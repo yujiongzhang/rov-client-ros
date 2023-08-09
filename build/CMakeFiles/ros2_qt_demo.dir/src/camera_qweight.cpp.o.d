@@ -1,7 +1,7 @@
 CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o: \
- /home/zyj/Desktop/rov_client_ros/src/camera_qweight.cpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/src/camera_qweight.cpp \
  /usr/include/stdc-predef.h \
- /home/zyj/Desktop/rov_client_ros/include/camera_qweight.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/camera_qweight.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -446,6 +446,7 @@ CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o: \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
  /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/isPingable.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \

@@ -1,5 +1,5 @@
--I/home/zyj/Desktop/rov_client_ros
--I/home/zyj/Desktop/rov_client_ros/build
+-I/home/zyj/Documents/GitHub/rov_client_ros_code
+-I/home/zyj/Documents/GitHub/rov_client_ros_code/build
 -o
-/home/zyj/Desktop/rov_client_ros/build/include/moc_rclcomm.cpp
-/home/zyj/Desktop/rov_client_ros/include/rclcomm.h
+/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_rclcomm.cpp
+/home/zyj/Documents/GitHub/rov_client_ros_code/include/rclcomm.h

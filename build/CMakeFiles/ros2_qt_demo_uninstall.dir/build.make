@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zyj/Desktop/rov_client_ros
+CMAKE_SOURCE_DIR = /home/zyj/Documents/GitHub/rov_client_ros_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zyj/Desktop/rov_client_ros/build
+CMAKE_BINARY_DIR = /home/zyj/Documents/GitHub/rov_client_ros_code/build
 
 # Utility rule file for ros2_qt_demo_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ros2_qt_demo_uninstall.dir/compiler_depend.make
 include CMakeFiles/ros2_qt_demo_uninstall.dir/progress.make
 
 CMakeFiles/ros2_qt_demo_uninstall:
-	/usr/bin/cmake -P /home/zyj/Desktop/rov_client_ros/build/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /home/zyj/Documents/GitHub/rov_client_ros_code/build/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 ros2_qt_demo_uninstall: CMakeFiles/ros2_qt_demo_uninstall
 ros2_qt_demo_uninstall: CMakeFiles/ros2_qt_demo_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ros2_qt_demo_uninstall.dir/clean:
 .PHONY : CMakeFiles/ros2_qt_demo_uninstall.dir/clean
 
 CMakeFiles/ros2_qt_demo_uninstall.dir/depend:
-	cd /home/zyj/Desktop/rov_client_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zyj/Desktop/rov_client_ros /home/zyj/Desktop/rov_client_ros /home/zyj/Desktop/rov_client_ros/build /home/zyj/Desktop/rov_client_ros/build /home/zyj/Desktop/rov_client_ros/build/CMakeFiles/ros2_qt_demo_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zyj/Documents/GitHub/rov_client_ros_code /home/zyj/Documents/GitHub/rov_client_ros_code /home/zyj/Documents/GitHub/rov_client_ros_code/build /home/zyj/Documents/GitHub/rov_client_ros_code/build /home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles/ros2_qt_demo_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ros2_qt_demo_uninstall.dir/depend
 

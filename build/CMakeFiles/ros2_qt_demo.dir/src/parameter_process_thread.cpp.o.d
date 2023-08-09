@@ -1,7 +1,7 @@
 CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o: \
- /home/zyj/Desktop/rov_client_ros/src/parameter_process_thread.cpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/src/parameter_process_thread.cpp \
  /usr/include/stdc-predef.h \
- /home/zyj/Desktop/rov_client_ros/include/parameter_process_thread.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/parameter_process_thread.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \

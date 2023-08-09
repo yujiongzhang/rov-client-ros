@@ -1,5 +1,5 @@
 CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o: \
- /home/zyj/Desktop/rov_client_ros/build/include/moc_joy_thread.cpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_joy_thread.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/memory \
  /usr/include/c++/11/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -116,7 +116,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o: \
  /usr/include/c++/11/backward/auto_ptr.h \
  /usr/include/c++/11/pstl/glue_memory_defs.h \
  /usr/include/c++/11/pstl/execution_defs.h \
- /home/zyj/Desktop/rov_client_ros/build/include/../../include/joy_thread.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/../../include/joy_thread.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -690,7 +690,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
- /home/zyj/Desktop/rov_client_ros/build/include/../../include/joy_linux.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/../../include/joy_linux.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \

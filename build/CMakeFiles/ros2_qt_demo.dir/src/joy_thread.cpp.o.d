@@ -1,7 +1,7 @@
 CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o: \
- /home/zyj/Desktop/rov_client_ros/src/joy_thread.cpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/src/joy_thread.cpp \
  /usr/include/stdc-predef.h \
- /home/zyj/Desktop/rov_client_ros/include/joy_thread.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/joy_thread.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobjectdefs.h \
@@ -690,7 +690,7 @@ CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
- /home/zyj/Desktop/rov_client_ros/include/joy_linux.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/joy_linux.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \

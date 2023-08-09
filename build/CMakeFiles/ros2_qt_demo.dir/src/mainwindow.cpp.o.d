@@ -1,7 +1,7 @@
 CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
- /home/zyj/Desktop/rov_client_ros/src/mainwindow.cpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/src/mainwindow.cpp \
  /usr/include/stdc-predef.h \
- /home/zyj/Desktop/rov_client_ros/include/mainwindow.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -279,7 +279,7 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
- /home/zyj/Desktop/rov_client_ros/include/rclcomm_class.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/rclcomm_class.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QThread \
@@ -713,7 +713,21 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__builder.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/int32__traits.hpp \
- /home/zyj/Desktop/rov_client_ros/include/joy_thread.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/tracks.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/tracks__struct.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/tracks__builder.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/tracks__traits.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/cabin_state.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/cabin_state__struct.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/cabin_state__builder.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/cabin_state__traits.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/thrusters.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/thrusters__struct.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/thruster__struct.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/thrusters__builder.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/thrusters__traits.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/install/rov_interfaces/include/rov_interfaces/rov_interfaces/msg/detail/thruster__traits.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/joy_thread.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/joy.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/joy__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/header__struct.hpp \
@@ -726,7 +740,7 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__builder.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/twist__traits.hpp \
  /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/vector3__traits.hpp \
- /home/zyj/Desktop/rov_client_ros/include/joy_linux.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/joy_linux.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
  /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
@@ -756,10 +770,33 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/ioctl-types.h \
  /usr/include/x86_64-linux-gnu/sys/ttydefaults.h \
  /usr/include/linux/input-event-codes.h /usr/include/linux/joystick.h \
- /home/zyj/Desktop/rov_client_ros/include/status_receive_thread.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/status_receive_thread.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug \
- /home/zyj/Desktop/rov_client_ros/include/parameter_process_thread.h \
- /home/zyj/Desktop/rov_client_ros/build/ui_mainwindow.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/rov_structs.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__struct.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__builder.hpp \
+ /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__traits.hpp \
+ /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/quaternion__traits.hpp \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Vector3.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Scalar.h \
+ /usr/include/c++/11/math.h /usr/include/c++/11/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/MinMax.h \
+ /opt/ros/humble/include/tf2/tf2/visibility_control.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/QuadWord.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Matrix3x3.h \
+ /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/parameter_process_thread.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QMetaType \
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qmetatype.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/build/ui_mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication \
@@ -782,6 +819,12 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qboxlayout.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLineEdit \
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlineedit.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextcursor.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextformat.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenuBar \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenubar.h \
@@ -798,11 +841,9 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qstatusbar.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h \
- /home/zyj/Desktop/rov_client_ros/include/camera_qweight.h \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/camera_qweight.h \
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h \
- /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h \
  /usr/include/opencv4/opencv2/opencv.hpp \
  /usr/include/opencv4/opencv2/opencv_modules.hpp \
  /usr/include/opencv4/opencv2/core.hpp \
@@ -824,8 +865,7 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
  /usr/include/opencv4/opencv2/core/matx.hpp \
  /usr/include/opencv4/opencv2/core/saturate.hpp \
  /usr/include/opencv4/opencv2/core/fast_math.hpp \
- /usr/include/opencv4/opencv2/core/types.hpp /usr/include/c++/11/cfloat \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/float.h \
+ /usr/include/opencv4/opencv2/core/types.hpp \
  /usr/include/opencv4/opencv2/core/mat.hpp \
  /usr/include/opencv4/opencv2/core/bufferpool.hpp \
  /usr/include/opencv4/opencv2/core/mat.inl.hpp \
@@ -877,7 +917,6 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
  /usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
  /usr/include/opencv4/opencv2/flann/lsh_index.h \
  /usr/include/opencv4/opencv2/flann/lsh_table.h \
- /usr/include/c++/11/math.h \
  /usr/include/opencv4/opencv2/flann/autotuned_index.h \
  /usr/include/opencv4/opencv2/flann/ground_truth.h \
  /usr/include/opencv4/opencv2/flann/index_testing.h \
@@ -917,4 +956,5 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: \
  /usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
  /usr/include/opencv4/opencv2/video.hpp \
  /usr/include/opencv4/opencv2/video/tracking.hpp \
- /usr/include/opencv4/opencv2/video/background_segm.hpp
+ /usr/include/opencv4/opencv2/video/background_segm.hpp \
+ /home/zyj/Documents/GitHub/rov_client_ros_code/include/isPingable.h

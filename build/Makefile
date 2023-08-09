@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zyj/Desktop/rov_client_ros
+CMAKE_SOURCE_DIR = /home/zyj/Documents/GitHub/rov_client_ros_code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zyj/Desktop/rov_client_ros/build
+CMAKE_BINARY_DIR = /home/zyj/Documents/GitHub/rov_client_ros_code/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zyj/Desktop/rov_client_ros/build/CMakeFiles /home/zyj/Desktop/rov_client_ros/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles /home/zyj/Documents/GitHub/rov_client_ros_code/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zyj/Desktop/rov_client_ros/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -233,6 +233,30 @@ include/moc_camera_qweight.s: include/moc_camera_qweight.cpp.s
 include/moc_camera_qweight.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.s
 .PHONY : include/moc_camera_qweight.cpp.s
+
+include/moc_isPingable.o: include/moc_isPingable.cpp.o
+.PHONY : include/moc_isPingable.o
+
+# target to build an object file
+include/moc_isPingable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o
+.PHONY : include/moc_isPingable.cpp.o
+
+include/moc_isPingable.i: include/moc_isPingable.cpp.i
+.PHONY : include/moc_isPingable.i
+
+# target to preprocess a source file
+include/moc_isPingable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.i
+.PHONY : include/moc_isPingable.cpp.i
+
+include/moc_isPingable.s: include/moc_isPingable.cpp.s
+.PHONY : include/moc_isPingable.s
+
+# target to generate assembly for a file
+include/moc_isPingable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.s
+.PHONY : include/moc_isPingable.cpp.s
 
 include/moc_joy_linux.o: include/moc_joy_linux.cpp.o
 .PHONY : include/moc_joy_linux.o
@@ -378,6 +402,30 @@ include/moc_rclcomm_class.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.s
 .PHONY : include/moc_rclcomm_class.cpp.s
 
+include/moc_rov_structs.o: include/moc_rov_structs.cpp.o
+.PHONY : include/moc_rov_structs.o
+
+# target to build an object file
+include/moc_rov_structs.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.o
+.PHONY : include/moc_rov_structs.cpp.o
+
+include/moc_rov_structs.i: include/moc_rov_structs.cpp.i
+.PHONY : include/moc_rov_structs.i
+
+# target to preprocess a source file
+include/moc_rov_structs.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.i
+.PHONY : include/moc_rov_structs.cpp.i
+
+include/moc_rov_structs.s: include/moc_rov_structs.cpp.s
+.PHONY : include/moc_rov_structs.s
+
+# target to generate assembly for a file
+include/moc_rov_structs.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.s
+.PHONY : include/moc_rov_structs.cpp.s
+
 include/moc_status_receive_thread.o: include/moc_status_receive_thread.cpp.o
 .PHONY : include/moc_status_receive_thread.o
 
@@ -449,6 +497,30 @@ src/camera_qweight.s: src/camera_qweight.cpp.s
 src/camera_qweight.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.s
 .PHONY : src/camera_qweight.cpp.s
+
+src/isPingable.o: src/isPingable.cpp.o
+.PHONY : src/isPingable.o
+
+# target to build an object file
+src/isPingable.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o
+.PHONY : src/isPingable.cpp.o
+
+src/isPingable.i: src/isPingable.cpp.i
+.PHONY : src/isPingable.i
+
+# target to preprocess a source file
+src/isPingable.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.i
+.PHONY : src/isPingable.cpp.i
+
+src/isPingable.s: src/isPingable.cpp.s
+.PHONY : src/isPingable.s
+
+# target to generate assembly for a file
+src/isPingable.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.s
+.PHONY : src/isPingable.cpp.s
 
 src/joy_linux.o: src/joy_linux.cpp.o
 .PHONY : src/joy_linux.o
@@ -661,6 +733,9 @@ help:
 	@echo "... include/moc_camera_qweight.o"
 	@echo "... include/moc_camera_qweight.i"
 	@echo "... include/moc_camera_qweight.s"
+	@echo "... include/moc_isPingable.o"
+	@echo "... include/moc_isPingable.i"
+	@echo "... include/moc_isPingable.s"
 	@echo "... include/moc_joy_linux.o"
 	@echo "... include/moc_joy_linux.i"
 	@echo "... include/moc_joy_linux.s"
@@ -679,6 +754,9 @@ help:
 	@echo "... include/moc_rclcomm_class.o"
 	@echo "... include/moc_rclcomm_class.i"
 	@echo "... include/moc_rclcomm_class.s"
+	@echo "... include/moc_rov_structs.o"
+	@echo "... include/moc_rov_structs.i"
+	@echo "... include/moc_rov_structs.s"
 	@echo "... include/moc_status_receive_thread.o"
 	@echo "... include/moc_status_receive_thread.i"
 	@echo "... include/moc_status_receive_thread.s"
@@ -688,6 +766,9 @@ help:
 	@echo "... src/camera_qweight.o"
 	@echo "... src/camera_qweight.i"
 	@echo "... src/camera_qweight.s"
+	@echo "... src/isPingable.o"
+	@echo "... src/isPingable.i"
+	@echo "... src/isPingable.s"
 	@echo "... src/joy_linux.o"
 	@echo "... src/joy_linux.i"
 	@echo "... src/joy_linux.s"
