@@ -112,6 +112,7 @@ public:
     QLabel *thr_l_label;
     QLabel *label_28;
     QLabel *thr_r_label;
+    QPushButton *connect_server_pushButton;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -902,6 +903,36 @@ public:
 
         gridLayout_5->addWidget(thr_r_label, 2, 3, 1, 1);
 
+        connect_server_pushButton = new QPushButton(centralwidget);
+        connect_server_pushButton->setObjectName(QString::fromUtf8("connect_server_pushButton"));
+        connect_server_pushButton->setGeometry(QRect(10, 30, 89, 25));
+        connect_server_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"    color: #2f3640;\n"
+"    background-color: #f5f690;\n"
+"    border-color: #2f3640;\n"
+"    border-radius: 10px;\n"
+"    border-style: solid;\n"
+"    border-width: 2px;\n"
+"    padding: 1px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{	\n"
+"    color: #FFFFFF;\n"
+"    background-color: #718093;\n"
+"    border-color: #2f3640;\n"
+"}\n"
+"\n"
+"QPushButton::pressed,QPushButton::checked{\n"
+"    color: #FFFFFF;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #273c75, stop:1 #487eb0);\n"
+"}\n"
+"\n"
+"QPushButton::disabled{\n"
+"    color: #FFFFFF;\n"
+"    background-color: #dcdde1;\n"
+"    border-color: #dcdde1;\n"
+"}"));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -979,6 +1010,7 @@ public:
         thr_l_label->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         label_28->setText(QCoreApplication::translate("MainWindow", "THR_R", nullptr));
         thr_r_label->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
+        connect_server_pushButton->setText(QCoreApplication::translate("MainWindow", "CONNECT", nullptr));
     } // retranslateUi
 
 };

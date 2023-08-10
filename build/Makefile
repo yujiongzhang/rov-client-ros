@@ -450,6 +450,30 @@ include/moc_status_receive_thread.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.s
 .PHONY : include/moc_status_receive_thread.cpp.s
 
+include/moc_threadsafe_queue.o: include/moc_threadsafe_queue.cpp.o
+.PHONY : include/moc_threadsafe_queue.o
+
+# target to build an object file
+include/moc_threadsafe_queue.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.o
+.PHONY : include/moc_threadsafe_queue.cpp.o
+
+include/moc_threadsafe_queue.i: include/moc_threadsafe_queue.cpp.i
+.PHONY : include/moc_threadsafe_queue.i
+
+# target to preprocess a source file
+include/moc_threadsafe_queue.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.i
+.PHONY : include/moc_threadsafe_queue.cpp.i
+
+include/moc_threadsafe_queue.s: include/moc_threadsafe_queue.cpp.s
+.PHONY : include/moc_threadsafe_queue.s
+
+# target to generate assembly for a file
+include/moc_threadsafe_queue.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ros2_qt_demo.dir/build.make CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.s
+.PHONY : include/moc_threadsafe_queue.cpp.s
+
 qrc_res.o: qrc_res.cpp.o
 .PHONY : qrc_res.o
 
@@ -760,6 +784,9 @@ help:
 	@echo "... include/moc_status_receive_thread.o"
 	@echo "... include/moc_status_receive_thread.i"
 	@echo "... include/moc_status_receive_thread.s"
+	@echo "... include/moc_threadsafe_queue.o"
+	@echo "... include/moc_threadsafe_queue.i"
+	@echo "... include/moc_threadsafe_queue.s"
 	@echo "... qrc_res.o"
 	@echo "... qrc_res.i"
 	@echo "... qrc_res.s"

@@ -10,5 +10,6 @@ ea9e2652487a826bf42687aa5766a52c include/moc_rclcomm.cpp
 ef42a2a8d822fd705328d3636d0e4ab3 include/moc_rclcomm_class.cpp
 c84fe8dd57a1709249e744a718367abe include/moc_rov_structs.cpp
 6ae858e1f0c8ee8878da85023aa2385e include/moc_status_receive_thread.cpp
+e712f10e69ea7af31d512232bcbffa23 include/moc_threadsafe_queue.cpp
 c6d2f455741a678f38acd85263832e45 qrc_res.cpp
 c55ac3f89ea2be621ee7189d4962f413 ui_mainwindow.h
