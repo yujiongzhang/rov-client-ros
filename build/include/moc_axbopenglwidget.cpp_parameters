@@ -1,0 +1,5 @@
+-I/home/zyj/Documents/GitHub/rov_client_ros_code
+-I/home/zyj/Documents/GitHub/rov_client_ros_code/build
+-o
+/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_axbopenglwidget.cpp
+/home/zyj/Documents/GitHub/rov_client_ros_code/include/axbopenglwidget.h

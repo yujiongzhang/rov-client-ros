@@ -79,59 +79,92 @@ qrc_res.cpp: ../resource/picture/camera3.jpg
 qrc_res.cpp: ../resource/picture/map.jpg
 qrc_res.cpp: ../resource/picture/sonar.png
 qrc_res.cpp: ../resource/picture/tubiao.png
+qrc_res.cpp: ../resource/module/rovmini.stl
+qrc_res.cpp: ../resource/module/stl.frag
+qrc_res.cpp: ../resource/module/stl.vert
 qrc_res.cpp: resource/res.qrc.depends
 qrc_res.cpp: ../resource/res.qrc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating qrc_res.cpp"
 	/usr/lib/qt5/bin/rcc --name res --output /home/zyj/Documents/GitHub/rov_client_ros_code/build/qrc_res.cpp /home/zyj/Documents/GitHub/rov_client_ros_code/resource/res.qrc
 
+include/moc_axbopenglwidget.cpp: ../include/axbopenglwidget.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/moc_axbopenglwidget.cpp"
+	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_axbopenglwidget.cpp_parameters
+
 include/moc_camera_qweight.cpp: ../include/camera_qweight.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating include/moc_camera_qweight.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating include/moc_camera_qweight.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_camera_qweight.cpp_parameters
 
+include/moc_definition.cpp: ../include/definition.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating include/moc_definition.cpp"
+	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_definition.cpp_parameters
+
+include/moc_hms2000.cpp: ../include/hms2000.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating include/moc_hms2000.cpp"
+	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_hms2000.cpp_parameters
+
+include/moc_hms2000_thread.cpp: ../include/hms2000_thread.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating include/moc_hms2000_thread.cpp"
+	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_hms2000_thread.cpp_parameters
+
 include/moc_isPingable.cpp: ../include/isPingable.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating include/moc_isPingable.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating include/moc_isPingable.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_isPingable.cpp_parameters
 
 include/moc_joy_linux.cpp: ../include/joy_linux.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating include/moc_joy_linux.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating include/moc_joy_linux.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_joy_linux.cpp_parameters
 
 include/moc_joy_thread.cpp: ../include/joy_thread.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating include/moc_joy_thread.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating include/moc_joy_thread.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_joy_thread.cpp_parameters
 
 include/moc_mainwindow.cpp: ../include/mainwindow.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating include/moc_mainwindow.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating include/moc_mainwindow.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_mainwindow.cpp_parameters
 
 include/moc_parameter_process_thread.cpp: ../include/parameter_process_thread.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating include/moc_parameter_process_thread.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating include/moc_parameter_process_thread.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_parameter_process_thread.cpp_parameters
 
 include/moc_rclcomm.cpp: ../include/rclcomm.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating include/moc_rclcomm.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating include/moc_rclcomm.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_rclcomm.cpp_parameters
 
 include/moc_rclcomm_class.cpp: ../include/rclcomm_class.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating include/moc_rclcomm_class.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating include/moc_rclcomm_class.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_rclcomm_class.cpp_parameters
 
 include/moc_rov_structs.cpp: ../include/rov_structs.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating include/moc_rov_structs.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating include/moc_rov_structs.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_rov_structs.cpp_parameters
 
 include/moc_status_receive_thread.cpp: ../include/status_receive_thread.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating include/moc_status_receive_thread.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Generating include/moc_status_receive_thread.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_status_receive_thread.cpp_parameters
 
 include/moc_threadsafe_queue.cpp: ../include/threadsafe_queue.h
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating include/moc_threadsafe_queue.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Generating include/moc_threadsafe_queue.cpp"
 	cd /home/zyj/Documents/GitHub/rov_client_ros_code/build/include && /usr/lib/qt5/bin/moc @/home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_threadsafe_queue.cpp_parameters
+
+CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
+CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.o: ../src/axbopenglwidget.cpp
+CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/axbopenglwidget.cpp
+
+CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyj/Documents/GitHub/rov_client_ros_code/src/axbopenglwidget.cpp > CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.i
+
+CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/src/axbopenglwidget.cpp -o CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.s
 
 CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o: ../src/camera_qweight.cpp
 CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/camera_qweight.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.i: cmake_force
@@ -142,10 +175,52 @@ CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/src/camera_qweight.cpp -o CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.s
 
+CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
+CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.o: ../src/definition.cpp
+CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/definition.cpp
+
+CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyj/Documents/GitHub/rov_client_ros_code/src/definition.cpp > CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.i
+
+CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/src/definition.cpp -o CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.s
+
+CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
+CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.o: ../src/hms2000.cpp
+CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/hms2000.cpp
+
+CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyj/Documents/GitHub/rov_client_ros_code/src/hms2000.cpp > CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.i
+
+CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/src/hms2000.cpp -o CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.s
+
+CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
+CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.o: ../src/hms2000_thread.cpp
+CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/hms2000_thread.cpp
+
+CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyj/Documents/GitHub/rov_client_ros_code/src/hms2000_thread.cpp > CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.i
+
+CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/src/hms2000_thread.cpp -o CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.s
+
 CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o: ../src/isPingable.cpp
 CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/isPingable.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.i: cmake_force
@@ -159,7 +234,7 @@ CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o: ../src/joy_linux.cpp
 CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/joy_linux.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.i: cmake_force
@@ -173,7 +248,7 @@ CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o: ../src/joy_thread.cpp
 CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/joy_thread.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.i: cmake_force
@@ -187,7 +262,7 @@ CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/src/main.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/ros2_qt_demo.dir/src/main.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/main.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/main.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/main.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/main.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/main.cpp.i: cmake_force
@@ -201,7 +276,7 @@ CMakeFiles/ros2_qt_demo.dir/src/main.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: ../src/mainwindow.cpp
 CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/mainwindow.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.i: cmake_force
@@ -215,7 +290,7 @@ CMakeFiles/ros2_qt_demo.dir/src/mainwindow.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o: ../src/parameter_process_thread.cpp
 CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/parameter_process_thread.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.i: cmake_force
@@ -229,7 +304,7 @@ CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o: ../src/rclcomm.cpp
 CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/rclcomm.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.i: cmake_force
@@ -243,7 +318,7 @@ CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o: ../src/rclcomm_class.cpp
 CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/rclcomm_class.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.i: cmake_force
@@ -257,7 +332,7 @@ CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o: ../src/status_receive_thread.cpp
 CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/src/status_receive_thread.cpp
 
 CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.i: cmake_force
@@ -268,10 +343,24 @@ CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/src/status_receive_thread.cpp -o CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.s
 
+CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
+CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.o: include/moc_axbopenglwidget.cpp
+CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_axbopenglwidget.cpp
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_axbopenglwidget.cpp > CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.i
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_axbopenglwidget.cpp -o CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.s
+
 CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o: include/moc_camera_qweight.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_camera_qweight.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.i: cmake_force
@@ -282,10 +371,52 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_camera_qweight.cpp -o CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.s
 
+CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
+CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.o: include/moc_definition.cpp
+CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_definition.cpp
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_definition.cpp > CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.i
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_definition.cpp -o CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.s
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.o: include/moc_hms2000.cpp
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_hms2000.cpp
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_hms2000.cpp > CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.i
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_hms2000.cpp -o CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.s
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.o: include/moc_hms2000_thread.cpp
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_hms2000_thread.cpp
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_hms2000_thread.cpp > CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.i
+
+CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_hms2000_thread.cpp -o CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.s
+
 CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o: include/moc_isPingable.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_isPingable.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.i: cmake_force
@@ -299,7 +430,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o: include/moc_joy_linux.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_joy_linux.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.i: cmake_force
@@ -313,7 +444,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o: include/moc_joy_thread.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_joy_thread.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.i: cmake_force
@@ -327,7 +458,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.o: include/moc_mainwindow.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_mainwindow.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.i: cmake_force
@@ -341,7 +472,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_mainwindow.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.o: include/moc_parameter_process_thread.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_parameter_process_thread.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.i: cmake_force
@@ -355,7 +486,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_parameter_process_thread.cpp.s: cmake_fo
 CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.o: include/moc_rclcomm.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_rclcomm.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.i: cmake_force
@@ -369,7 +500,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.o: include/moc_rclcomm_class.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_rclcomm_class.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.i: cmake_force
@@ -383,7 +514,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_rclcomm_class.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.o: include/moc_rov_structs.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_rov_structs.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.i: cmake_force
@@ -397,7 +528,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_rov_structs.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.o: include/moc_status_receive_thread.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_status_receive_thread.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.i: cmake_force
@@ -411,7 +542,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_status_receive_thread.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.o: include/moc_threadsafe_queue.cpp
 CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building CXX object CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/include/moc_threadsafe_queue.cpp
 
 CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.i: cmake_force
@@ -425,7 +556,7 @@ CMakeFiles/ros2_qt_demo.dir/include/moc_threadsafe_queue.cpp.s: cmake_force
 CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.o: CMakeFiles/ros2_qt_demo.dir/flags.make
 CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.o: qrc_res.cpp
 CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.o: CMakeFiles/ros2_qt_demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building CXX object CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.o -MF CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.o.d -o CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.o -c /home/zyj/Documents/GitHub/rov_client_ros_code/build/qrc_res.cpp
 
 CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.i: cmake_force
@@ -438,7 +569,11 @@ CMakeFiles/ros2_qt_demo.dir/qrc_res.cpp.s: cmake_force
 
 # Object files for target ros2_qt_demo
 ros2_qt_demo_OBJECTS = \
+"CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o" \
+"CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.o" \
+"CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.o" \
+"CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o" \
@@ -448,7 +583,11 @@ ros2_qt_demo_OBJECTS = \
 "CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o" \
+"CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o" \
+"CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.o" \
+"CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.o" \
+"CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o" \
 "CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o" \
@@ -464,7 +603,11 @@ ros2_qt_demo_OBJECTS = \
 # External object files for target ros2_qt_demo
 ros2_qt_demo_EXTERNAL_OBJECTS =
 
+ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/axbopenglwidget.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/camera_qweight.cpp.o
+ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/definition.cpp.o
+ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/hms2000.cpp.o
+ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/hms2000_thread.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/isPingable.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/joy_linux.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/joy_thread.cpp.o
@@ -474,7 +617,11 @@ ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/parameter_process_thread.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/rclcomm.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/rclcomm_class.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/src/status_receive_thread.cpp.o
+ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/include/moc_axbopenglwidget.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/include/moc_camera_qweight.cpp.o
+ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/include/moc_definition.cpp.o
+ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000.cpp.o
+ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/include/moc_hms2000_thread.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/include/moc_isPingable.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/include/moc_joy_linux.cpp.o
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/include/moc_joy_thread.cpp.o
@@ -501,6 +648,7 @@ ros2_qt_demo: ../install/rov_interfaces/lib/librov_interfaces__rosidl_generator_
 ros2_qt_demo: /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so
 ros2_qt_demo: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.74.0
 ros2_qt_demo: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3
+ros2_qt_demo: /usr/lib/x86_64-linux-gnu/libQt5Network.so.5.15.3
 ros2_qt_demo: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.5.4d
 ros2_qt_demo: /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.5.4d
 ros2_qt_demo: /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.5.4d
@@ -663,7 +811,7 @@ ros2_qt_demo: /usr/lib/x86_64-linux-gnu/libopencv_photo.so.4.5.4d
 ros2_qt_demo: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.4.5.4d
 ros2_qt_demo: /usr/lib/x86_64-linux-gnu/libopencv_core.so.4.5.4d
 ros2_qt_demo: CMakeFiles/ros2_qt_demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable ros2_qt_demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/zyj/Documents/GitHub/rov_client_ros_code/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Linking CXX executable ros2_qt_demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ros2_qt_demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -674,7 +822,11 @@ CMakeFiles/ros2_qt_demo.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/ros2_qt_demo.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/ros2_qt_demo.dir/clean
 
+CMakeFiles/ros2_qt_demo.dir/depend: include/moc_axbopenglwidget.cpp
 CMakeFiles/ros2_qt_demo.dir/depend: include/moc_camera_qweight.cpp
+CMakeFiles/ros2_qt_demo.dir/depend: include/moc_definition.cpp
+CMakeFiles/ros2_qt_demo.dir/depend: include/moc_hms2000.cpp
+CMakeFiles/ros2_qt_demo.dir/depend: include/moc_hms2000_thread.cpp
 CMakeFiles/ros2_qt_demo.dir/depend: include/moc_isPingable.cpp
 CMakeFiles/ros2_qt_demo.dir/depend: include/moc_joy_linux.cpp
 CMakeFiles/ros2_qt_demo.dir/depend: include/moc_joy_thread.cpp

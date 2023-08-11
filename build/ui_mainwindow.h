@@ -22,7 +22,9 @@
 #include <QtWidgets/QSlider>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
+#include <axbopenglwidget.h>
 #include <camera_qweight.h>
+#include <hms2000.h>
 
 QT_BEGIN_NAMESPACE
 
@@ -30,15 +32,16 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QLabel *label_3;
     QWidget *widget;
-    QHBoxLayout *horizontalLayout;
-    QPushButton *led_on_pushButton;
-    QPushButton *led_off_pushButton;
-    QWidget *widget_2;
-    QHBoxLayout *horizontalLayout_2;
-    QPushButton *camera_on_pushButton;
+    QGridLayout *gridLayout_6;
     QPushButton *camera_off_pushButton;
+    QPushButton *led_off_pushButton;
+    QPushButton *led_on_pushButton;
+    QPushButton *sonar_off_pushButton;
+    QPushButton *sonar_on_pushButton;
+    QPushButton *camera_on_pushButton;
+    QPushButton *camera2_on_pushButton;
+    QPushButton *camera2_off_pushButton;
     QGroupBox *groupBox;
     QGridLayout *gridLayout_2;
     QLabel *height_label;
@@ -90,10 +93,6 @@ public:
     QLineEdit *lineEdit_2;
     QPushButton *pushButton_2;
     camera_qweight *camera2;
-    QWidget *widget_3;
-    QHBoxLayout *horizontalLayout_3;
-    QPushButton *camera2_on_pushButton;
-    QPushButton *camera2_off_pushButton;
     QGroupBox *groupBox_4;
     QGridLayout *gridLayout_5;
     QLabel *label_2;
@@ -113,6 +112,9 @@ public:
     QLabel *label_28;
     QLabel *thr_r_label;
     QPushButton *connect_server_pushButton;
+    Hms2000 *sonar;
+    AXBOpenGLWidget *openGLWidget;
+    AXBOpenGLWidget *openGLWidget_yaw;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -123,19 +125,16 @@ public:
         MainWindow->resize(1600, 1000);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        label_3 = new QLabel(centralwidget);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(1010, 10, 280, 210));
-        label_3->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 0);"));
         widget = new QWidget(centralwidget);
         widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(290, 120, 211, 44));
-        horizontalLayout = new QHBoxLayout(widget);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        led_on_pushButton = new QPushButton(widget);
-        led_on_pushButton->setObjectName(QString::fromUtf8("led_on_pushButton"));
-        led_on_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+        widget->setGeometry(QRect(10, 150, 281, 171));
+        gridLayout_6 = new QGridLayout(widget);
+        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
+        camera_off_pushButton = new QPushButton(widget);
+        camera_off_pushButton->setObjectName(QString::fromUtf8("camera_off_pushButton"));
+        camera_off_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: bold;\n"
 "    color: #2f3640;\n"
 "    background-color: #f5f690;\n"
 "    border-color: #2f3640;\n"
@@ -162,12 +161,13 @@ public:
 "    border-color: #dcdde1;\n"
 "}"));
 
-        horizontalLayout->addWidget(led_on_pushButton);
+        gridLayout_6->addWidget(camera_off_pushButton, 1, 1, 1, 1);
 
         led_off_pushButton = new QPushButton(widget);
         led_off_pushButton->setObjectName(QString::fromUtf8("led_off_pushButton"));
         led_off_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: bold;\n"
 "    color: #2f3640;\n"
 "    background-color: #f5f690;\n"
 "    border-color: #2f3640;\n"
@@ -194,17 +194,119 @@ public:
 "    border-color: #dcdde1;\n"
 "}"));
 
-        horizontalLayout->addWidget(led_off_pushButton);
+        gridLayout_6->addWidget(led_off_pushButton, 0, 1, 1, 1);
 
-        widget_2 = new QWidget(centralwidget);
-        widget_2->setObjectName(QString::fromUtf8("widget_2"));
-        widget_2->setGeometry(QRect(290, 170, 211, 44));
-        horizontalLayout_2 = new QHBoxLayout(widget_2);
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
-        camera_on_pushButton = new QPushButton(widget_2);
+        led_on_pushButton = new QPushButton(widget);
+        led_on_pushButton->setObjectName(QString::fromUtf8("led_on_pushButton"));
+        led_on_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: bold;\n"
+"    color: #2f3640;\n"
+"    background-color: #f5f690;\n"
+"    border-color: #2f3640;\n"
+"    border-radius: 10px;\n"
+"    border-style: solid;\n"
+"    border-width: 2px;\n"
+"    padding: 1px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{	\n"
+"    color: #FFFFFF;\n"
+"    background-color: #718093;\n"
+"    border-color: #2f3640;\n"
+"}\n"
+"\n"
+"QPushButton::pressed,QPushButton::checked{\n"
+"    color: #FFFFFF;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #273c75, stop:1 #487eb0);\n"
+"}\n"
+"\n"
+"QPushButton::disabled{\n"
+"    color: #FFFFFF;\n"
+"    background-color: #dcdde1;\n"
+"    border-color: #dcdde1;\n"
+"}"));
+
+        gridLayout_6->addWidget(led_on_pushButton, 0, 0, 1, 1);
+
+        sonar_off_pushButton = new QPushButton(widget);
+        sonar_off_pushButton->setObjectName(QString::fromUtf8("sonar_off_pushButton"));
+        sonar_off_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: bold;\n"
+"    color: #2f3640;\n"
+"    background-color: #f5f690;\n"
+"    border-color: #2f3640;\n"
+"    border-radius: 10px;\n"
+"    border-style: solid;\n"
+"    border-width: 2px;\n"
+"    padding: 1px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{	\n"
+"    color: #FFFFFF;\n"
+"    background-color: #718093;\n"
+"    border-color: #2f3640;\n"
+"}\n"
+"\n"
+"QPushButton::pressed,QPushButton::checked{\n"
+"    color: #FFFFFF;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #273c75, stop:1 #487eb0);\n"
+"}\n"
+"\n"
+"QPushButton::disabled{\n"
+"    color: #FFFFFF;\n"
+"    background-color: #dcdde1;\n"
+"    border-color: #dcdde1;\n"
+"}"));
+
+        gridLayout_6->addWidget(sonar_off_pushButton, 3, 1, 1, 1);
+
+        sonar_on_pushButton = new QPushButton(widget);
+        sonar_on_pushButton->setObjectName(QString::fromUtf8("sonar_on_pushButton"));
+        QFont font;
+        font.setFamily(QString::fromUtf8("\345\276\256\350\275\257\351\233\205\351\273\221"));
+        font.setPointSize(10);
+        font.setBold(true);
+        font.setItalic(false);
+        font.setWeight(75);
+        sonar_on_pushButton->setFont(font);
+        sonar_on_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: bold;\n"
+"    color: #2f3640;\n"
+"    background-color: #f5f690;\n"
+"    border-color: #2f3640;\n"
+"    border-radius: 10px;\n"
+"    border-style: solid;\n"
+"    border-width: 2px;\n"
+"    padding: 1px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{	\n"
+"    color: #FFFFFF;\n"
+"    background-color: #718093;\n"
+"    border-color: #2f3640;\n"
+"}\n"
+"\n"
+"QPushButton::pressed,QPushButton::checked{\n"
+"    color: #FFFFFF;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #273c75, stop:1 #487eb0);\n"
+"}\n"
+"\n"
+"QPushButton::disabled{\n"
+"    color: #FFFFFF;\n"
+"    background-color: #dcdde1;\n"
+"    border-color: #dcdde1;\n"
+"}"));
+
+        gridLayout_6->addWidget(sonar_on_pushButton, 3, 0, 1, 1);
+
+        camera_on_pushButton = new QPushButton(widget);
         camera_on_pushButton->setObjectName(QString::fromUtf8("camera_on_pushButton"));
         camera_on_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: bold;\n"
 "    color: #2f3640;\n"
 "    background-color: #f5f690;\n"
 "    border-color: #2f3640;\n"
@@ -231,12 +333,13 @@ public:
 "    border-color: #dcdde1;\n"
 "}"));
 
-        horizontalLayout_2->addWidget(camera_on_pushButton);
+        gridLayout_6->addWidget(camera_on_pushButton, 1, 0, 1, 1);
 
-        camera_off_pushButton = new QPushButton(widget_2);
-        camera_off_pushButton->setObjectName(QString::fromUtf8("camera_off_pushButton"));
-        camera_off_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+        camera2_on_pushButton = new QPushButton(widget);
+        camera2_on_pushButton->setObjectName(QString::fromUtf8("camera2_on_pushButton"));
+        camera2_on_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: bold;\n"
 "    color: #2f3640;\n"
 "    background-color: #f5f690;\n"
 "    border-color: #2f3640;\n"
@@ -263,20 +366,53 @@ public:
 "    border-color: #dcdde1;\n"
 "}"));
 
-        horizontalLayout_2->addWidget(camera_off_pushButton);
+        gridLayout_6->addWidget(camera2_on_pushButton, 2, 0, 1, 1);
+
+        camera2_off_pushButton = new QPushButton(widget);
+        camera2_off_pushButton->setObjectName(QString::fromUtf8("camera2_off_pushButton"));
+        camera2_off_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: bold;\n"
+"    color: #2f3640;\n"
+"    background-color: #f5f690;\n"
+"    border-color: #2f3640;\n"
+"    border-radius: 10px;\n"
+"    border-style: solid;\n"
+"    border-width: 2px;\n"
+"    padding: 1px;\n"
+"}\n"
+"\n"
+"QPushButton::hover{	\n"
+"    color: #FFFFFF;\n"
+"    background-color: #718093;\n"
+"    border-color: #2f3640;\n"
+"}\n"
+"\n"
+"QPushButton::pressed,QPushButton::checked{\n"
+"    color: #FFFFFF;\n"
+"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #273c75, stop:1 #487eb0);\n"
+"}\n"
+"\n"
+"QPushButton::disabled{\n"
+"    color: #FFFFFF;\n"
+"    background-color: #dcdde1;\n"
+"    border-color: #dcdde1;\n"
+"}"));
+
+        gridLayout_6->addWidget(camera2_off_pushButton, 2, 1, 1, 1);
 
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(10, 450, 281, 121));
-        QFont font;
-        font.setBold(true);
-        font.setWeight(75);
-        groupBox->setFont(font);
+        groupBox->setGeometry(QRect(10, 480, 281, 121));
+        QFont font1;
+        font1.setBold(true);
+        font1.setWeight(75);
+        groupBox->setFont(font1);
         gridLayout_2 = new QGridLayout(groupBox);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         height_label = new QLabel(groupBox);
         height_label->setObjectName(QString::fromUtf8("height_label"));
-        height_label->setFont(font);
+        height_label->setFont(font1);
         height_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_2->addWidget(height_label, 1, 3, 1, 1);
@@ -303,14 +439,14 @@ public:
 
         depth_label = new QLabel(groupBox);
         depth_label->setObjectName(QString::fromUtf8("depth_label"));
-        depth_label->setFont(font);
+        depth_label->setFont(font1);
         depth_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_2->addWidget(depth_label, 0, 3, 1, 1);
 
         rol_label = new QLabel(groupBox);
         rol_label->setObjectName(QString::fromUtf8("rol_label"));
-        rol_label->setFont(font);
+        rol_label->setFont(font1);
         rol_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_2->addWidget(rol_label, 5, 5, 1, 1);
@@ -327,29 +463,29 @@ public:
 
         yaw_label = new QLabel(groupBox);
         yaw_label->setObjectName(QString::fromUtf8("yaw_label"));
-        yaw_label->setFont(font);
+        yaw_label->setFont(font1);
         yaw_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_2->addWidget(yaw_label, 0, 5, 1, 1);
 
         pitch_label = new QLabel(groupBox);
         pitch_label->setObjectName(QString::fromUtf8("pitch_label"));
-        pitch_label->setFont(font);
+        pitch_label->setFont(font1);
         pitch_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_2->addWidget(pitch_label, 1, 5, 1, 1);
 
         mode_label = new QLabel(groupBox);
         mode_label->setObjectName(QString::fromUtf8("mode_label"));
-        mode_label->setFont(font);
+        mode_label->setFont(font1);
         mode_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_2->addWidget(mode_label, 5, 3, 1, 1);
 
         groupBox_2 = new QGroupBox(centralwidget);
         groupBox_2->setObjectName(QString::fromUtf8("groupBox_2"));
-        groupBox_2->setGeometry(QRect(10, 590, 281, 130));
-        groupBox_2->setFont(font);
+        groupBox_2->setGeometry(QRect(10, 600, 281, 130));
+        groupBox_2->setFont(font1);
         gridLayout = new QGridLayout(groupBox_2);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label_7 = new QLabel(groupBox_2);
@@ -359,7 +495,7 @@ public:
 
         temperature_label = new QLabel(groupBox_2);
         temperature_label->setObjectName(QString::fromUtf8("temperature_label"));
-        temperature_label->setFont(font);
+        temperature_label->setFont(font1);
         temperature_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout->addWidget(temperature_label, 0, 1, 1, 1);
@@ -371,7 +507,7 @@ public:
 
         humidity_label = new QLabel(groupBox_2);
         humidity_label->setObjectName(QString::fromUtf8("humidity_label"));
-        humidity_label->setFont(font);
+        humidity_label->setFont(font1);
         humidity_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout->addWidget(humidity_label, 1, 1, 1, 1);
@@ -383,7 +519,7 @@ public:
 
         cpu_temperature_label = new QLabel(groupBox_2);
         cpu_temperature_label->setObjectName(QString::fromUtf8("cpu_temperature_label"));
-        cpu_temperature_label->setFont(font);
+        cpu_temperature_label->setFont(font1);
         cpu_temperature_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout->addWidget(cpu_temperature_label, 2, 1, 1, 1);
@@ -395,14 +531,14 @@ public:
 
         water_level_label = new QLabel(groupBox_2);
         water_level_label->setObjectName(QString::fromUtf8("water_level_label"));
-        water_level_label->setFont(font);
+        water_level_label->setFont(font1);
         water_level_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout->addWidget(water_level_label, 3, 1, 1, 1);
 
         widget_4 = new QWidget(centralwidget);
         widget_4->setObjectName(QString::fromUtf8("widget_4"));
-        widget_4->setGeometry(QRect(290, 10, 421, 91));
+        widget_4->setGeometry(QRect(10, 60, 281, 91));
         gridLayout_4 = new QGridLayout(widget_4);
         gridLayout_4->setObjectName(QString::fromUtf8("gridLayout_4"));
         label_11 = new QLabel(widget_4);
@@ -503,8 +639,8 @@ public:
         camera1->setStyleSheet(QString::fromUtf8("background-color: rgb(97, 53, 131);"));
         groupBox_3 = new QGroupBox(centralwidget);
         groupBox_3->setObjectName(QString::fromUtf8("groupBox_3"));
-        groupBox_3->setGeometry(QRect(10, 730, 281, 221));
-        groupBox_3->setFont(font);
+        groupBox_3->setGeometry(QRect(10, 740, 281, 211));
+        groupBox_3->setFont(font1);
         gridLayout_3 = new QGridLayout(groupBox_3);
         gridLayout_3->setObjectName(QString::fromUtf8("gridLayout_3"));
         pushButton_4 = new QPushButton(groupBox_3);
@@ -536,12 +672,12 @@ public:
 
         pushButton_3 = new QPushButton(groupBox_3);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        QFont font1;
-        font1.setPointSize(11);
-        font1.setBold(true);
-        font1.setItalic(false);
-        font1.setWeight(75);
-        pushButton_3->setFont(font1);
+        QFont font2;
+        font2.setPointSize(11);
+        font2.setBold(true);
+        font2.setItalic(false);
+        font2.setWeight(75);
+        pushButton_3->setFont(font2);
         pushButton_3->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "	font: 11pt ;\n"
 "	font-weight: bold;\n"
@@ -730,81 +866,12 @@ public:
         gridLayout_3->setRowMinimumHeight(2, 1);
         camera2 = new camera_qweight(centralwidget);
         camera2->setObjectName(QString::fromUtf8("camera2"));
-        camera2->setGeometry(QRect(720, 10, 280, 210));
+        camera2->setGeometry(QRect(740, 10, 280, 210));
         camera2->setStyleSheet(QString::fromUtf8("background-color: rgb(97, 53, 131);"));
-        widget_3 = new QWidget(centralwidget);
-        widget_3->setObjectName(QString::fromUtf8("widget_3"));
-        widget_3->setGeometry(QRect(510, 170, 201, 44));
-        horizontalLayout_3 = new QHBoxLayout(widget_3);
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
-        camera2_on_pushButton = new QPushButton(widget_3);
-        camera2_on_pushButton->setObjectName(QString::fromUtf8("camera2_on_pushButton"));
-        camera2_on_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-"    color: #2f3640;\n"
-"    background-color: #f5f690;\n"
-"    border-color: #2f3640;\n"
-"    border-radius: 10px;\n"
-"    border-style: solid;\n"
-"    border-width: 2px;\n"
-"    padding: 1px;\n"
-"}\n"
-"\n"
-"QPushButton::hover{	\n"
-"    color: #FFFFFF;\n"
-"    background-color: #718093;\n"
-"    border-color: #2f3640;\n"
-"}\n"
-"\n"
-"QPushButton::pressed,QPushButton::checked{\n"
-"    color: #FFFFFF;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #273c75, stop:1 #487eb0);\n"
-"}\n"
-"\n"
-"QPushButton::disabled{\n"
-"    color: #FFFFFF;\n"
-"    background-color: #dcdde1;\n"
-"    border-color: #dcdde1;\n"
-"}"));
-
-        horizontalLayout_3->addWidget(camera2_on_pushButton);
-
-        camera2_off_pushButton = new QPushButton(widget_3);
-        camera2_off_pushButton->setObjectName(QString::fromUtf8("camera2_off_pushButton"));
-        camera2_off_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
-"    color: #2f3640;\n"
-"    background-color: #f5f690;\n"
-"    border-color: #2f3640;\n"
-"    border-radius: 10px;\n"
-"    border-style: solid;\n"
-"    border-width: 2px;\n"
-"    padding: 1px;\n"
-"}\n"
-"\n"
-"QPushButton::hover{	\n"
-"    color: #FFFFFF;\n"
-"    background-color: #718093;\n"
-"    border-color: #2f3640;\n"
-"}\n"
-"\n"
-"QPushButton::pressed,QPushButton::checked{\n"
-"    color: #FFFFFF;\n"
-"    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #273c75, stop:1 #487eb0);\n"
-"}\n"
-"\n"
-"QPushButton::disabled{\n"
-"    color: #FFFFFF;\n"
-"    background-color: #dcdde1;\n"
-"    border-color: #dcdde1;\n"
-"}"));
-
-        horizontalLayout_3->addWidget(camera2_off_pushButton);
-
         groupBox_4 = new QGroupBox(centralwidget);
         groupBox_4->setObjectName(QString::fromUtf8("groupBox_4"));
-        groupBox_4->setGeometry(QRect(10, 300, 281, 141));
-        groupBox_4->setFont(font);
+        groupBox_4->setGeometry(QRect(10, 330, 281, 141));
+        groupBox_4->setFont(font1);
         gridLayout_5 = new QGridLayout(groupBox_4);
         gridLayout_5->setObjectName(QString::fromUtf8("gridLayout_5"));
         label_2 = new QLabel(groupBox_4);
@@ -824,14 +891,14 @@ public:
 
         tra_r_label = new QLabel(groupBox_4);
         tra_r_label->setObjectName(QString::fromUtf8("tra_r_label"));
-        tra_r_label->setFont(font);
+        tra_r_label->setFont(font1);
         tra_r_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_5->addWidget(tra_r_label, 3, 3, 1, 1);
 
         thr_ur_label = new QLabel(groupBox_4);
         thr_ur_label->setObjectName(QString::fromUtf8("thr_ur_label"));
-        thr_ur_label->setFont(font);
+        thr_ur_label->setFont(font1);
         thr_ur_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_5->addWidget(thr_ur_label, 0, 3, 1, 1);
@@ -843,14 +910,14 @@ public:
 
         thr_ul_label = new QLabel(groupBox_4);
         thr_ul_label->setObjectName(QString::fromUtf8("thr_ul_label"));
-        thr_ul_label->setFont(font);
+        thr_ul_label->setFont(font1);
         thr_ul_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_5->addWidget(thr_ul_label, 0, 1, 1, 1);
 
         thr_lr_label = new QLabel(groupBox_4);
         thr_lr_label->setObjectName(QString::fromUtf8("thr_lr_label"));
-        thr_lr_label->setFont(font);
+        thr_lr_label->setFont(font1);
         thr_lr_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_5->addWidget(thr_lr_label, 1, 3, 1, 1);
@@ -862,14 +929,14 @@ public:
 
         tra_l_label = new QLabel(groupBox_4);
         tra_l_label->setObjectName(QString::fromUtf8("tra_l_label"));
-        tra_l_label->setFont(font);
+        tra_l_label->setFont(font1);
         tra_l_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_5->addWidget(tra_l_label, 3, 1, 1, 1);
 
         thr_ll_label = new QLabel(groupBox_4);
         thr_ll_label->setObjectName(QString::fromUtf8("thr_ll_label"));
-        thr_ll_label->setFont(font);
+        thr_ll_label->setFont(font1);
         thr_ll_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_5->addWidget(thr_ll_label, 1, 1, 1, 1);
@@ -886,7 +953,7 @@ public:
 
         thr_l_label = new QLabel(groupBox_4);
         thr_l_label->setObjectName(QString::fromUtf8("thr_l_label"));
-        thr_l_label->setFont(font);
+        thr_l_label->setFont(font1);
         thr_l_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_5->addWidget(thr_l_label, 2, 1, 1, 1);
@@ -898,16 +965,17 @@ public:
 
         thr_r_label = new QLabel(groupBox_4);
         thr_r_label->setObjectName(QString::fromUtf8("thr_r_label"));
-        thr_r_label->setFont(font);
+        thr_r_label->setFont(font1);
         thr_r_label->setStyleSheet(QString::fromUtf8("color: rgb(229, 165, 10);"));
 
         gridLayout_5->addWidget(thr_r_label, 2, 3, 1, 1);
 
         connect_server_pushButton = new QPushButton(centralwidget);
         connect_server_pushButton->setObjectName(QString::fromUtf8("connect_server_pushButton"));
-        connect_server_pushButton->setGeometry(QRect(10, 30, 89, 25));
+        connect_server_pushButton->setGeometry(QRect(10, 10, 121, 25));
         connect_server_pushButton->setStyleSheet(QString::fromUtf8("QPushButton{\n"
 "	font: 10pt \"\345\276\256\350\275\257\351\233\205\351\273\221\";\n"
+"	font: bold;\n"
 "    color: #2f3640;\n"
 "    background-color: #f5f690;\n"
 "    border-color: #2f3640;\n"
@@ -933,6 +1001,16 @@ public:
 "    background-color: #dcdde1;\n"
 "    border-color: #dcdde1;\n"
 "}"));
+        sonar = new Hms2000(centralwidget);
+        sonar->setObjectName(QString::fromUtf8("sonar"));
+        sonar->setGeometry(QRect(1030, 10, 240, 210));
+        sonar->setStyleSheet(QString::fromUtf8("background-color: rgb(245, 194, 17);"));
+        openGLWidget = new AXBOpenGLWidget(centralwidget);
+        openGLWidget->setObjectName(QString::fromUtf8("openGLWidget"));
+        openGLWidget->setGeometry(QRect(300, 10, 210, 210));
+        openGLWidget_yaw = new AXBOpenGLWidget(centralwidget);
+        openGLWidget_yaw->setObjectName(QString::fromUtf8("openGLWidget_yaw"));
+        openGLWidget_yaw->setGeometry(QRect(520, 10, 210, 210));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -950,11 +1028,14 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "ROV_Client_X", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        led_on_pushButton->setText(QCoreApplication::translate("MainWindow", "\345\274\200\347\201\257", nullptr));
-        led_off_pushButton->setText(QCoreApplication::translate("MainWindow", "\345\205\263\347\201\257", nullptr));
-        camera_on_pushButton->setText(QCoreApplication::translate("MainWindow", "\346\211\223\345\274\200\347\233\270\346\234\272", nullptr));
-        camera_off_pushButton->setText(QCoreApplication::translate("MainWindow", "\345\205\263\351\227\255\347\233\270\346\234\272", nullptr));
+        camera_off_pushButton->setText(QCoreApplication::translate("MainWindow", "Camera OFF", nullptr));
+        led_off_pushButton->setText(QCoreApplication::translate("MainWindow", "LED OFF", nullptr));
+        led_on_pushButton->setText(QCoreApplication::translate("MainWindow", "LED ON", nullptr));
+        sonar_off_pushButton->setText(QCoreApplication::translate("MainWindow", "Sonar OFF", nullptr));
+        sonar_on_pushButton->setText(QCoreApplication::translate("MainWindow", "Sonar ON", nullptr));
+        camera_on_pushButton->setText(QCoreApplication::translate("MainWindow", "Camera ON", nullptr));
+        camera2_on_pushButton->setText(QCoreApplication::translate("MainWindow", "Detec ON", nullptr));
+        camera2_off_pushButton->setText(QCoreApplication::translate("MainWindow", "Deterc OFF", nullptr));
         groupBox->setTitle(QCoreApplication::translate("MainWindow", "ROV STATUS", nullptr));
         height_label->setText(QCoreApplication::translate("MainWindow", "0", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "depth:", nullptr));
@@ -991,8 +1072,6 @@ public:
         pushButton->setText(QCoreApplication::translate("MainWindow", "SET", nullptr));
         label_21->setText(QCoreApplication::translate("MainWindow", "target att", nullptr));
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "SET", nullptr));
-        camera2_on_pushButton->setText(QCoreApplication::translate("MainWindow", "\346\211\223\345\274\200\347\233\270\346\234\2722", nullptr));
-        camera2_off_pushButton->setText(QCoreApplication::translate("MainWindow", "\345\205\263\351\227\255\347\233\270\346\234\2722", nullptr));
         groupBox_4->setTitle(QCoreApplication::translate("MainWindow", "MOTOR STATUS", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "THR_LL", nullptr));
         label_19->setText(QCoreApplication::translate("MainWindow", "TRA_R", nullptr));

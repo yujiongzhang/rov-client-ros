@@ -22,8 +22,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[22];
-    char stringdata0[449];
+    QByteArrayData data[24];
+    char stringdata0[512];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -53,7 +53,9 @@ QT_MOC_LITERAL(17, 281, 31), // "on_camera_on_pushButton_clicked"
 QT_MOC_LITERAL(18, 313, 32), // "on_camera_off_pushButton_clicked"
 QT_MOC_LITERAL(19, 346, 32), // "on_camera2_on_pushButton_clicked"
 QT_MOC_LITERAL(20, 379, 33), // "on_camera2_off_pushButton_cli..."
-QT_MOC_LITERAL(21, 413, 35) // "on_brightness_slider_sliderRe..."
+QT_MOC_LITERAL(21, 413, 30), // "on_sonar_on_pushButton_clicked"
+QT_MOC_LITERAL(22, 444, 31), // "on_sonar_off_pushButton_clicked"
+QT_MOC_LITERAL(23, 476, 35) // "on_brightness_slider_sliderRe..."
 
     },
     "MainWindow\0update_test\0\0msg\0update_imu\0"
@@ -68,6 +70,8 @@ QT_MOC_LITERAL(21, 413, 35) // "on_brightness_slider_sliderRe..."
     "on_camera_off_pushButton_clicked\0"
     "on_camera2_on_pushButton_clicked\0"
     "on_camera2_off_pushButton_clicked\0"
+    "on_sonar_on_pushButton_clicked\0"
+    "on_sonar_off_pushButton_clicked\0"
     "on_brightness_slider_sliderReleased"
 };
 #undef QT_MOC_LITERAL
@@ -78,7 +82,7 @@ static const uint qt_meta_data_MainWindow[] = {
        8,       // revision
        0,       // classname
        0,    0, // classinfo
-      15,   14, // methods
+      17,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -86,21 +90,23 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,   89,    2, 0x0a /* Public */,
-       4,    1,   92,    2, 0x0a /* Public */,
-       6,    1,   95,    2, 0x0a /* Public */,
-       8,    1,   98,    2, 0x0a /* Public */,
-      10,    1,  101,    2, 0x0a /* Public */,
-      12,    1,  104,    2, 0x0a /* Public */,
-      13,    1,  107,    2, 0x0a /* Public */,
-      14,    0,  110,    2, 0x08 /* Private */,
-      15,    0,  111,    2, 0x08 /* Private */,
-      16,    0,  112,    2, 0x08 /* Private */,
-      17,    0,  113,    2, 0x08 /* Private */,
-      18,    0,  114,    2, 0x08 /* Private */,
-      19,    0,  115,    2, 0x08 /* Private */,
-      20,    0,  116,    2, 0x08 /* Private */,
-      21,    0,  117,    2, 0x08 /* Private */,
+       1,    1,   99,    2, 0x0a /* Public */,
+       4,    1,  102,    2, 0x0a /* Public */,
+       6,    1,  105,    2, 0x0a /* Public */,
+       8,    1,  108,    2, 0x0a /* Public */,
+      10,    1,  111,    2, 0x0a /* Public */,
+      12,    1,  114,    2, 0x0a /* Public */,
+      13,    1,  117,    2, 0x0a /* Public */,
+      14,    0,  120,    2, 0x08 /* Private */,
+      15,    0,  121,    2, 0x08 /* Private */,
+      16,    0,  122,    2, 0x08 /* Private */,
+      17,    0,  123,    2, 0x08 /* Private */,
+      18,    0,  124,    2, 0x08 /* Private */,
+      19,    0,  125,    2, 0x08 /* Private */,
+      20,    0,  126,    2, 0x08 /* Private */,
+      21,    0,  127,    2, 0x08 /* Private */,
+      22,    0,  128,    2, 0x08 /* Private */,
+      23,    0,  129,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, QMetaType::Int,    3,
@@ -110,6 +116,8 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void, 0x80000000 | 11,    3,
     QMetaType::Void, QMetaType::Float,    3,
     QMetaType::Void, QMetaType::Float,    3,
+    QMetaType::Void,
+    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -142,7 +150,9 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 11: _t->on_camera_off_pushButton_clicked(); break;
         case 12: _t->on_camera2_on_pushButton_clicked(); break;
         case 13: _t->on_camera2_off_pushButton_clicked(); break;
-        case 14: _t->on_brightness_slider_sliderReleased(); break;
+        case 14: _t->on_sonar_on_pushButton_clicked(); break;
+        case 15: _t->on_sonar_off_pushButton_clicked(); break;
+        case 16: _t->on_brightness_slider_sliderReleased(); break;
         default: ;
         }
     }
@@ -177,13 +187,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 15)
+        if (_id < 17)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 15;
+        _id -= 17;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 15)
+        if (_id < 17)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 15;
+        _id -= 17;
     }
     return _id;
 }
