@@ -1,0 +1,6 @@
+#!/bin/bash
+
+. install/setup.bash
+./build/ros2_qt_demo
+
+exit 0
